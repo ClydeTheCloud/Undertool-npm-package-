@@ -114,8 +114,10 @@ function useUndertool(options = {}) {
 		const tooltip = (
 			<Tooltip
 				child={data.contentId && options.children ? options.children[data.contentId] : undefined}
-				clipPath={options.clipPaths && options.clipPaths[data.contentId] ? options.clipPaths[data.contentId] : undefined}
-				commonClipPath={options.commonClipPath}
+				clipPath={
+					options.clipPaths && options.clipPaths[data.contentId] ? options.clipPaths[data.contentId].current : undefined
+				}
+				commonClipPath={options.commonClipPath ? options.commonClipPath.current : undefined}
 				position={config.position}
 				anchor={targetElement}
 				key={identifier}

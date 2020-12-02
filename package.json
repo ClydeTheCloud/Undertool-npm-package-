@@ -1,6 +1,6 @@
 {
   "name": "undertool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Multi-tooltip instrument for React",
   "main": "./lib/",
   "peerDependencies": {
