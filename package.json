@@ -1,0 +1,50 @@
+{
+  "name": "undertool",
+  "version": "1.0.2",
+  "description": "Multi-tooltip instrument for React",
+  "main": "./lib/",
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "react": "^16.0.0",
+	"react-dom": "^16.0.0",
+	"@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^5.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.8.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.5.4"
+  },
+  "scripts": {
+	"test": "echo \"Error: no test specified\" && exit 1",
+	"build": "npx webpack",
+	"pack": "npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClydeTheCloud/Undertool.git"
+  },
+  "keywords": [
+    "react",
+    "tooltip"
+  ],
+  "author": "Alexandr Diakov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ClydeTheCloud/Undertool/issues"
+  },
+  "homepage": "https://github.com/ClydeTheCloud/Undertool#readme"
+}

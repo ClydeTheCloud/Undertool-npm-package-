@@ -1,0 +1,103 @@
+@import url(./Animations.css);
+
+.tooltip-default-style {
+	padding: 15px;
+	background-color: #333;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.tooltip-helper-class[data-popper-reference-hidden] {
+	visibility: hidden;
+	pointer-events: none;
+}
+
+/* sm - small set */
+.tooltip-helper-class[data-popper-placement^='top'] .tooltip-arrow-wrapper-sm {
+	bottom: -7px;
+}
+
+.tooltip-helper-class[data-popper-placement^='bottom'] .tooltip-arrow-wrapper-sm {
+	top: -7px;
+}
+
+.tooltip-helper-class[data-popper-placement^='left'] .tooltip-arrow-wrapper-sm {
+	right: -7px;
+}
+
+.tooltip-helper-class[data-popper-placement^='right'] .tooltip-arrow-wrapper-sm {
+	left: -7px;
+}
+
+/* md - medium set */
+.tooltip-helper-class[data-popper-placement^='top'] .tooltip-arrow-wrapper-md {
+	bottom: -14px;
+}
+
+.tooltip-helper-class[data-popper-placement^='bottom'] .tooltip-arrow-wrapper-md {
+	top: -14px;
+}
+
+.tooltip-helper-class[data-popper-placement^='left'] .tooltip-arrow-wrapper-md {
+	right: -14px;
+}
+
+.tooltip-helper-class[data-popper-placement^='right'] .tooltip-arrow-wrapper-md {
+	left: -14px;
+}
+
+/* lg - large set */
+.tooltip-helper-class[data-popper-placement^='top'] .tooltip-arrow-wrapper-lg {
+	bottom: -21px;
+}
+
+.tooltip-helper-class[data-popper-placement^='bottom'] .tooltip-arrow-wrapper-lg {
+	top: -21px;
+}
+
+.tooltip-helper-class[data-popper-placement^='left'] .tooltip-arrow-wrapper-lg {
+	right: -21px;
+}
+
+.tooltip-helper-class[data-popper-placement^='right'] .tooltip-arrow-wrapper-lg {
+	left: -21px;
+}
+
+/* rd - round set */
+.tooltip-helper-class[data-popper-placement^='top'] .tooltip-arrow-wrapper-rd {
+	bottom: -6px;
+}
+
+.tooltip-helper-class[data-popper-placement^='bottom'] .tooltip-arrow-wrapper-rd {
+	top: -6px;
+}
+
+.tooltip-helper-class[data-popper-placement^='left'] .tooltip-arrow-wrapper-rd {
+	right: -6px;
+}
+
+.tooltip-helper-class[data-popper-placement^='right'] .tooltip-arrow-wrapper-rd {
+	left: -6px;
+}
+
+/* fix for arrowborders */
+.tooltip-helper-class[data-popper-placement^='top'] .tooltip-arrow-inner {
+	border-left: none;
+	border-top: none;
+}
+
+.tooltip-helper-class[data-popper-placement^='bottom'] .tooltip-arrow-inner {
+	border-right: none;
+	border-bottom: none;
+}
+
+.tooltip-helper-class[data-popper-placement^='left'] .tooltip-arrow-inner {
+	border-left: none;
+	border-bottom: none;
+}
+
+.tooltip-helper-class[data-popper-placement^='right'] .tooltip-arrow-inner {
+	border-right: none;
+	border-top: none;
+}
