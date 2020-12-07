@@ -14,6 +14,7 @@ export const possibleValues = [
 	{ magnet: 'magnet:on magnet:off' },
 	{ merge: 'merge overwrite' },
 	{ maxw: 'maxw:' },
+	{ hideable: 'hideable:on hideable:off' },
 ]
 
 function configParser(configString, eventType, targetElement) {
@@ -111,7 +112,7 @@ function check(array) {
 				} else if (bKey === 'maxw') {
 					values = { ...values, maxw: maxWidthExtractor(a) }
 					valuesConverted.push(a)
-				} else if (bKey === 'flip' || bKey === 'fixed' || bKey === 'magnet') {
+				} else if (bKey === 'flip' || bKey === 'fixed' || bKey === 'magnet' || bKey === 'hideable') {
 					const aVal = a.endsWith(':on') ? true : false
 					values = { ...values, [bKey]: aVal }
 					valuesConverted.push(a)

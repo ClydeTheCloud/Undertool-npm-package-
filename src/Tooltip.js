@@ -163,6 +163,7 @@ class Tooltip extends React.Component {
 				ref={this.tooltipRef}
 				style={{ zIndex: 55 }}
 				className={'tooltip-helper-class'}
+				data-popper-hideable={this.props.hideable}
 				onClick={e => (e.nativeEvent.fired = true)}
 				onMouseEnter={e => {
 					if (this.props.type !== 'click') {

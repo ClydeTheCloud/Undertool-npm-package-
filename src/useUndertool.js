@@ -135,6 +135,7 @@ function useUndertool(options = {}) {
 				close={close}
 				manageHover={manageHover}
 				type={event.type}
+				hideable={config.hideable === undefined ? true : config.hideable}
 			/>
 		)
 

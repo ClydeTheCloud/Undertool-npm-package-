@@ -8,7 +8,7 @@
 	text-align: center;
 }
 
-.tooltip-helper-class[data-popper-reference-hidden] {
+.tooltip-helper-class[data-popper-hideable='true'][data-popper-reference-hidden] {
 	visibility: hidden;
 	pointer-events: none;
 }
